@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mars, Really?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="page-header text-center bg-danger">
+                <h1>Mars: Elon's Second Home</h1>
+                <button type="button" class="btn-danger" onclick="location.href='/update'">Update</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Latest Mars News</h3>
+                <h4>{{news_title}}</h4>
+                <p>{{news_p}}</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <h3>Featured Mars Image</h3>
+                </br>
+                <img class="img-responsive" src="{{featured_image_url}}">
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Current Weather on Mars</h3>
+                        <p>{{mars_weather}}</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Mars Facts</h3>
+                    {{mars_facts|safe}}
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="text-center">Mars Hempispheres</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img class="img-responsive" src="{{img_url_0}}">
+                    </div>
+                    <div class="panel-heading">
+                        <h3>{{title_0}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img class="img-responsive" src="{{img_url_1}}">
+                    </div>
+                    <div class="panel-heading">
+                        <h3>{{title_1}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img class="img-responsive" src="{{img_url_2}}">
+                    </div>
+                    <div class="panel-heading">
+                        <h3>{{title_2}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img class="img-responsive" src="{{img_url_3}}">
+                    </div>
+
+                    <div class="panel-heading">
+                        <h3>{{title_3}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div>
+        <ul>
+            <li>
+                {{news_title}}
+            </li>
+            <li>
+                {{news_p}}
+            </li>
+            <li>
+                {{featured_image_url}}
+            </li>
+            <li>
+                {{mars_weather}}
+            </li>
+            <li>
+                {{mars_facts}}
+            </li>
+            <li>
+                {{title_0}}
+            </li>
+            <li>
+                {{img_url_0}}
+            </li>
+            <li>
+                {{title_1}}
+            </li>
+            <li>
+                {{img_url_1}}
+            </li>
+            <li>
+                {{title_2}}
+            </li>
+            <li>
+                {{img_url_2}}
+            </li>
+            <li>
+                {{title_3}}
+            </li>
+            <li>
+                {{img_url_3}}
+            </li>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>
